@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#58D2D6"
+    android:backgroundTint="#36B2B6"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="332dp"
+        android:layout_height="674dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="170dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="129dp"
+            android:text="KALKULATOR"
+            android:textColor="#1881BF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editBil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="bilangan satu"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editBil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="165dp"
+            android:ems="10"
+            android:hint="Bilangan dua"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#0277BD"
+            android:text="+"
+            android:textSize="20dp"
+            app:cornerRadius="50dp"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/btnMin"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#0277BD"
+            android:text="-"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#0277BD"
+            android:text=":"
+            android:textSize="25dp"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#0277BD"
+            android:text="x"
+            android:textSize="18dp"
+            app:cornerRadius="50dp" />
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="305dp"
+            android:text="HASIL"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvHasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="299dp"
+            android:hint="0"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listData"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="410dp"/>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="340dp"
+            android:text="SIMPAN"
+            app:cornerRadius="20dp"
+            android:backgroundTint="#0277BD"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="340dp"
+            android:backgroundTint="#DD5555"
+            android:text="DETELE"
+            app:cornerRadius="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
